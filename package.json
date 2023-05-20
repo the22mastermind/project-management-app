@@ -1,0 +1,30 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "Project Management App",
+  "main": "index.js",
+  "author": "the22mastermind",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.21.5",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "mongoose": "^7.2.0"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.21.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "babel-node server/index.js",
+    "dev": "nodemon --exec babel-node server/index.js"
+  }
+}
