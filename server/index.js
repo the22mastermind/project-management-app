@@ -1,5 +1,6 @@
 import express from "express";
 import colors from "colors";
+import cors from "cors";
 import dotenv from "dotenv";
 import { graphqlHTTP } from "express-graphql";
 import { connectDB } from "./config/db";
@@ -13,6 +14,9 @@ const app = express();
 
 // Connect to database
 connectDB();
+
+// Cors
+app.use(cors());
 
 app.use(
   "/graphql",
