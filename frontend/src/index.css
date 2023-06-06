@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #DDF3F0;
+  /* background: linear-gradient(to bottom, #ffffff, #DDF3F0); */
 }
 
 code {
@@ -17,8 +19,12 @@ code {
 }
 
 .navbar-brand img {
-  width: 30px;
   margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-family: 'Cherry Bomb One', cursive;
 }
 
 .btn {
@@ -27,24 +33,49 @@ code {
 
 .btn-primary,
 .bg-primary {
-  background-color: #117CB9 !important;
+  background-color: #01A2BB !important;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #117CB9;
+  background-color: #01A2BB;
   opacity: 0.9;
 }
 
 .btn-secondary {
-  background-color: #7430f9;
+  background-color: #F99B52;
 }
 
 .btn-secondary:hover {
-  background-color: #7430f9;
+  background-color: #F99B52;
   opacity: 0.9;
 }
 
 .icon {
   margin-right: 5px;
+}
+
+.bg-main {
+  background-color: #DDF3F0;
+}
+
+.highlight {
+  color: #F99B52;
+}
+
+.accent {
+  color: #01A2BB;
+}
+
+.text {
+  color: #333333;
+}
+
+.hero {
+  /* background: linear-gradient(to right, #ffffff, #DDF3F0); */
+  height: 100vh;
+}
+
+.dashboard {
+  height: 100%;
 }

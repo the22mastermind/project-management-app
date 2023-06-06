@@ -35,7 +35,7 @@ const AddClient = () => {
     <>
       <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary btn-lg border-0 rounded-pill px-4 py-3"
         data-bs-toggle="modal"
         data-bs-target="#addClientModal"
       >
@@ -100,7 +100,7 @@ const AddClient = () => {
                 <div>
                   <button
                     type="submit"
-                    className="btn btn-primary"
+                    className="btn btn-primary btn-lg border-0 rounded-pill px-4 py-3"
                     data-bs-dismiss="modal"
                   >
                     Submit

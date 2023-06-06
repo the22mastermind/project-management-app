@@ -1,12 +1,11 @@
 import { useQuery } from "@apollo/client";
-import Spinner from "../Spinner/Spinner";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { GET_PROJECTS } from "../../queries/projectQueries";
 
 const Projects = () => {
   const { loading, error, data } = useQuery(GET_PROJECTS);
 
-  if (loading) return <Spinner />;
+  if (loading) return null;
   if (error) return <p>Error: Something went wrong</p>;
 
   return (

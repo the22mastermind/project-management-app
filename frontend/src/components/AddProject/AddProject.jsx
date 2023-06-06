@@ -3,7 +3,6 @@ import { FaList } from "react-icons/fa";
 import { useMutation, useQuery } from "@apollo/client";
 import { GET_CLIENTS } from "../../queries/clientQueries";
 import { ADD_PROJECT } from "../../mutations/projectMutations";
-import Spinner from "../Spinner/Spinner";
 import { GET_PROJECTS } from "../../queries/projectQueries";
 
 const AddProject = () => {
@@ -39,7 +38,7 @@ const AddProject = () => {
     setClientId("");
   };
 
-  if (loading) return <Spinner />;
+  if (loading) return null;
   if (error) return "Error: Something went wrong";
 
   return (
@@ -48,7 +47,7 @@ const AddProject = () => {
         <>
           <button
             type="button"
-            className="btn btn-secondary"
+            className="btn btn-secondary btn-lg border-0 rounded-pill px-4 py-3"
             data-bs-toggle="modal"
             data-bs-target="#addProjectModal"
           >
@@ -131,7 +130,7 @@ const AddProject = () => {
                     <div>
                       <button
                         type="submit"
-                        className="btn btn-secondary"
+                        className="btn btn-secondary btn-lg border-0 rounded-pill px-4 py-3"
                         data-bs-dismiss="modal"
                       >
                         Submit

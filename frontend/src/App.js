@@ -4,6 +4,7 @@ import { ApolloProvider } from "@apollo/client";
 import Header from "./components/Header/Header";
 import { client } from "./config/graphql";
 import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 
@@ -16,6 +17,7 @@ const App = () => {
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/projects/:id" element={<Project />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

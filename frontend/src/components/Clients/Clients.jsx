@@ -10,9 +10,9 @@ const Clients = () => {
   if (error) return <p>Error: Something went wrong</p>;
 
   return (
-    <>
+    <div className="table-responsive">
       {!loading && !error && (
-        <table className="table table-hover mt-3">
+        <table className="table table-hover table-striped mt-3">
           <thead>
             <tr>
               <th>Name</th>
@@ -28,7 +28,7 @@ const Clients = () => {
           </tbody>
         </table>
       )}
-    </>
+    </div>
   );
 };
 
